@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Game</title>
+    <link rel="stylesheet" href="stylesd.css">
+</head>
+<body>
+    <div class="container">
+        <div class="items" id="items-container">
+            <div class="item" draggable="true" id="judge">Judge</div>
+            <div class="item" draggable="true" id="prosecutor">Prosecutor</div>
+            <div class="item" draggable="true" id="defendant">Defendant</div>
+            <div class="item" draggable="true" id="defense-attorney">Defense Attorney</div>
+            <div class="item" draggable="true" id="court-clerk">Court Clerk</div>
+        </div>
+        <div class="dropzones" id="dropzones-container">
+            <div class="dropzone" data-role="judge">Ensuring proceedings are fair and just</div>
+            <div class="dropzone" data-role="prosecutor">Presenting evidence to prove defendant's guilt</div>
+            <div class="dropzone" data-role="defendant">Accused of committing the crime</div>
+            <div class="dropzone" data-role="defense-attorney">Representing the defendant</div>
+            <div class="dropzone" data-role="court-clerk">Managing court records</div>
+        </div>
+    </div>
+    <div id="result"></div>
+    <button id="restart" onclick="restartGame()">Restart Game</button>
+    <script src="scriptd.js"></script>
+</body>
+</html>
